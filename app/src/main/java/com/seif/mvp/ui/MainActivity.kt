@@ -15,15 +15,12 @@ class MainActivity : AppCompatActivity(), MovieView {
         btn_movieName.setOnClickListener {
             presenter.getMovieName()
         }
-
     }
 
     override fun onGetMovieName(movieName: String) {
-        // After the presenter pass data to interface the interface will shoe the data in TextView.
+        // After the presenter pass data to interface the interface will show the data in TextView.
         super.onGetMovieName(movieName)
         txt_moviename.text = movieName
     }
-
     // this activity is for handle events as "onClick" and show data as in TextView.
-
 }
